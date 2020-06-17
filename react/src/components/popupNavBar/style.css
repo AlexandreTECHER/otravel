@@ -1,0 +1,8 @@
+.popupNavbar{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.buttonPopupNavbar{
+    padding: 4px 5px;
+}

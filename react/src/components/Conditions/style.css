@@ -1,0 +1,114 @@
+.conditions--utilisations header p {
+    border-bottom: 1px solid #ebebeb ;
+    font-size: large;
+    font-weight: bold;
+    display: flex;
+    margin-left: 2rem;
+}
+
+.conditions--utilisations .footer__menu {
+    width: 100%;
+    padding-right: 9%;
+    padding-bottom: 2rem;
+}
+
+.conditions--utilisations header {
+    width: 100%;
+    height: 4rem;
+    background-color: #3f51b5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: white;
+}
+
+.conditions--utilisations header h2 {
+    font-weight: lighter;
+    padding-right: 9%;
+}
+
+
+.conditions--utilisations header h1:hover {
+  color: white;
+}
+
+.conditions--utilisations {
+    font-family: 'Manrope', sans-serif;    
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+.block {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.conditions--utilisations__menu {
+    width: 20%;
+    margin-left: 2rem;
+}
+
+.conditions--utilisations__menu ul li{
+    margin-bottom: 0.5rem;
+}
+
+.conditions--utilisations__content {
+    width: 80%;
+    text-align: justify;
+    margin-left: 10%;
+    padding-right: 10%;
+}
+
+.art--neuf {
+    margin-bottom: 2rem;
+}
+
+.conditions--utilisations__content h1 {
+    font-size: 1.5rem;
+}
+
+.conditions--utilisations__content h2 {
+    margin-top: 2rem;
+}
+
+@media all and (max-width: 836px) {
+    .block {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .conditions--utilisations__menu {
+        width: 100%;
+        margin:0;
+        padding: 0;
+        margin-bottom: 2rem;
+     }
+
+    .conditions--utilisations__menu ul {
+       display:flex;
+       width: 100%;
+       flex-wrap: wrap;
+    }
+
+    .conditions--utilisations__content {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .conditions--utilisations__menu ul li {
+        width: 50%;
+     }
+}
+
+@media all and (max-width: 536px) {
+    .conditions--utilisations__menu ul li {
+        width: 100%;
+     }
+}

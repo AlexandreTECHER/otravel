@@ -1,0 +1,121 @@
+.informations--user {
+    overflow-y: auto;
+}
+
+.informations--user header {
+    width: 100%;
+    height: 4rem;
+    background-color: #3f51b5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.informations--user header h2 {
+    font-weight: lighter;
+}
+
+.informations--user header h1:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.user__picture {
+    background-color: #3f51b5;
+    height: 50px;
+    width:50px;
+    border-radius: 50%;
+    margin:auto;
+    margin-top: 1rem;
+}
+
+.user--statistic {
+    text-align: center;
+    font-size: 0.6rem;
+    color: grey;
+}
+
+.user--data {
+    width: 100%;
+    display: flex;
+    padding-left:2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    justify-content: center;
+}
+
+.user--label--data {
+    width: 50%;
+    font-size: 90%;
+    overflow-x: auto;
+    padding-left: 0.5rem;
+    text-align:center;
+    display:flex;
+    align-items: flex-end;
+}
+
+.user--content--data input {
+    border: none;
+    background-color: #f0f4f7;
+
+}
+
+.user--data input {
+    width: 20%;
+}
+
+.user--content--data {
+    background-color: #f0f4f7;
+}
+
+.modification--data {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.modification--data button {
+    background-color: #3f51b5 ;
+    border:none;
+    color:white;
+}
+
+.modification--data p {
+    margin-top: 0.4rem;
+    color: gray;
+    font-size: 0.6rem;
+}
+
+.modification--data button:hover {
+    cursor: pointer;
+    background-color: #39489e;
+}
+
+.informations--user .footer__menu {
+    position: static;
+    width: 100%;
+}
+
+@media all and (min-height:667px){
+    .informations--user .footer__menu {
+        position: fixed;
+        bottom:0;
+        padding-bottom: 1rem;
+    }
+}
+
+@media all and (max-width:664px) {
+    .user--data  {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .user--label--data {
+        display: flex;
+        justify-content: center;
+    }
+}

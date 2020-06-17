@@ -1,0 +1,42 @@
+.not--found {
+    font-family: 'Manrope', sans-serif;
+    padding-left: 1rem;
+}
+
+.not--found header p {
+    width: 100%;
+    height: 4rem;
+    border-bottom: 1px solid #ebebeb ;
+    font-size: large;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.not--found__oups {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.not--found__code {
+    color: grey;
+}
+
+.display {
+    font-size: 3rem;
+    display: flex;
+}
+
+.liens {
+    display: flex;
+    flex-direction: column;
+    color: rgba(0, 153, 255, 0.767);
+}
+
+.aide--liens {
+    margin-bottom: 2rem;
+}
+
+.liens:hover {
+    text-decoration: underline;
+}

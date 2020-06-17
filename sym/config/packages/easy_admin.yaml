@@ -1,0 +1,63 @@
+easy_admin:
+    entities:
+        # List the entity class name you want to manage
+        Category:
+            class: App\Entity\Category
+            label: 'Categories'
+            form:
+                fields: 
+                    - 'id'
+                    - 'name'
+        User:
+            class: App\Entity\User
+            label: 'Utilisateurs'
+            form:
+                fields: 
+                    - 'username'
+                    - 'avatar'
+                    - 'email'
+                    - { property: roles, type: 'choice', type_options: { expanded: true, multiple: true, choices: { 'Utilisateur': 'ROLE_USER', 'Administrateur': 'ROLE_ADMIN' }} }
+                    - 'password'
+        Places:
+            class: App\Entity\Places
+            label: 'Lieux'
+            form:
+                fields: 
+                    - 'id'
+                    - 'name'
+                    - {property: 'user'}
+                    - 'street'
+                    - 'zipcode'
+                    - 'city'
+                    - 'lng'
+                    - 'lat'
+                    - 'description'
+
+        PlacesPicture:
+            class: App\Entity\PlacePicture
+            label: 'PlacePicture'
+            form:
+                fields: 
+                    - 'id'
+                    - 'name'
+        
+        Commentaires:
+            class: App\Entity\Commentary
+            label: 'Commentaires'
+            form:
+                fields: 
+                    - 'id'
+                    - { property: 'user' }
+                    - 'text'
+        
+        CommentairesPhoto:
+            class: App\Entity\CommentaryPicture
+            label: 'Photo commentaire'
+            form:
+                fields: 
+                    - 'id'
+                    - 'commentary'
+                    - 'name'
+            
+       
+       
